@@ -487,21 +487,36 @@ header .social-icon li a
 /* end copyright */
 
 /* start social icon */
+
+
+.social-title 	{
+	font-weight: bold;
+	font-size: 20px;
+	padding-bottom: 10px;
+	padding-top: 5px;
+}
+
 .social-icon
 	{
 		position: relative;
 		padding: 0;
-		margin: 0;
+		margin-top: 20px;
 	}
-.social-icon h4
+/* .social-icon h4
 	{
 		display: inline-block;
 		padding-right: 20px;
+	} */
+.social-img
+	{
+		margin: 0 10px 10px 0;
 	}
+
 .social-icon li
 	{
-		display: inline-block;
+		display: block;
 		list-style: none;
+		margin: 0 0 10px;
 	}
 .social-icon li a
 	{
