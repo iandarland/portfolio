@@ -502,6 +502,14 @@ header .social-icon li a
 		padding: 0;
 		margin-top: 20px;
 	}
+
+.social-head .social-icon li{
+	display: inline-block;
+}
+
+.social-head .social-icon {
+	margin-top: 0;
+}
 /* .social-icon h4
 	{
 		display: inline-block;
