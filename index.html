@@ -368,21 +368,27 @@
     				<div class="col-md-12">
     					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">CONTACT <span>IAN</span></h2>
     				</div>
-    				<!-- <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.9s">
-    					<form action="mailto:ianpdarland@gmail.com" method ="POST">
-							<input type ="hidden" name= "_to" value= "ianpdarland@gmail.com">
-    						<label>NAME</label>
-    						<input name="fullname" type="text" class="form-control" id="fullname">
-   						  	
-                            <label>EMAIL</label>
-    						<input name="email" type="email" class="form-control" id="email">
-   						  	
-                            <label>MESSAGE</label>
-    						<textarea name="message" rows="4" class="form-control" id="message"></textarea>
-    						
-                            <input type="submit" value="Send" class="form-control">
+    				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.9s">
+    					<form id="contact-form">
+							<!-- <input type ="hidden" name= "_to" value= "ianpdarland@gmail.com"> -->
+							<div class="feild">
+    							<label for="from_name">NAME</label>
+    							<input name="from_name" type="text" class="form-control" id="from_name">
+							</div>
+							
+							<div class="feild">
+                            	<label for="reply_to">EMAIL</label>
+    							<input name="reply_to" type="email" class="form-control" id="reply_to">
+							</div>
+
+							<div class="feild">
+                            	<label for="message">MESSAGE</label>
+    							<textarea name="message" rows="4" class="form-control" id="message"></textarea>
+    						</div>
+
+                            <input id="button" type="submit" value="Send Email" class="form-control">
     					</form>
-    				</div> -->
+    				</div>
     				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
     					<address>
     						<p class="address-title">MY ADDRESSES</p>
@@ -392,15 +398,15 @@
     						<p><i class="fa fa-map-marker"></i> Austin, TX</p>
     					</address>
 					</div>
-					<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
+					<!-- <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
 
     					<ul class="social-icon">
     						<li><h4 class="social-title">WE ARE SOCIAL</h4></li>
-                            <!-- <li><a href="#" class="fa fa-facebook"></a></li> -->
+                            <!-- <li><a href="#" class="fa fa-facebook"></a></li>
                             <li><a href="https://www.linkedin.com/in/ian-darland/" class="social-img fa fa-linkedin"></a>@iandarland</li>
                             <li><a href="https://github.com/iandarland" class="social-img fa fa-github"></a>@iandarland</li>
     					</ul>
-					</div>
+					</div> -->
     			</div>
     		</div>
     	</section>
@@ -418,6 +424,13 @@
             </div>
         </footer>
         <!-- end copyright -->
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+		<script type="text/javascript">
+			(function() {
+				emailjs.init("LXk_ZQKAIDruXhGCz");
+			})();
+		</script>
+		<script src="js/contact.js"></script>
 
 	</body>
 </html>
